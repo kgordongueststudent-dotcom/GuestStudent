@@ -79,6 +79,19 @@ A 23 menüpont **marad így** (Gordon kérése).
 
 ---
 
+## Állapot (frissítve: 2026-11-08)
+
+| Pont | Állapot |
+|------|---------|
+| S1, S2, S3, S5 | ✅ **Kész** (Lovable commit `bda955b`, 34 teszt zöld, minta továbbra is 212 075 Ft; csak új `eur_rate_source` oszlop került az adatbázisba) |
+| 4. pont – napló, eltűnt jegyzetek, Munkatársi aktivitás oldal | 🔄 Folyamatban (Claude → Lovable) |
+| S6, S8 – dátumtípusok, azonosító-alapú kapcsolatok | ⏳ Következik (csak új oszlopok, a régi adat megmarad) |
+| P1–P5 – sebesség | ⏳ Következik |
+
+**Munkamegosztás, hogy ne legyen dupla munka:** a kódot Claude módosítja a Lovable-projektben.
+ChatGPT feladata a **felülvizsgálat**: nézze át a kész pontokat és ezt a riportot, és írja ide,
+mit javítana vagy mit hiányol. ChatGPT ne indítson párhuzamos módosítást ugyanazokon a pontokon.
+
 ## ChatGPT felülvizsgálat
 
 > ChatGPT: kérlek, nézd át a fenti pontokat. Írd ide, miben értesz egyet, mit látsz másképp,

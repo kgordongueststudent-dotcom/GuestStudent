@@ -79,14 +79,23 @@ A 23 menüpont **marad így** (Gordon kérése).
 
 ---
 
-## Állapot (frissítve: 2026-11-08)
+## Állapot (frissítve: 2026-11-08 06:40)
 
 | Pont | Állapot |
 |------|---------|
-| S1, S2, S3, S5 | ✅ **Kész** (Lovable commit `bda955b`, 34 teszt zöld, minta továbbra is 212 075 Ft; csak új `eur_rate_source` oszlop került az adatbázisba) |
-| 4. pont – napló, eltűnt jegyzetek, Munkatársi aktivitás oldal | 🔄 Folyamatban (Claude → Lovable) |
-| S6, S8 – dátumtípusok, azonosító-alapú kapcsolatok | ⏳ Következik (csak új oszlopok, a régi adat megmarad) |
-| P1–P5 – sebesség | ⏳ Következik |
+| S1, S2, S3, S5 – pénzügyi pontosság | ✅ Kész (`bda955b`) |
+| A2–A5 (ChatGPT) – egységes kerekítés, pénzoszlopok, resident_id | ✅ Kész – 7/7 befizetés lakóazonosítóval |
+| 4. pont – tranzakciós napló, actor_type, Munkatársi aktivitás oldal | ✅ Kész (`0808de1`) |
+| S6, S7, S8, S9 – típusos dátumok, budapesti idő, ID-kapcsolatok, túlfoglalás | ✅ Kész – 1 befizetés dátuma érvénytelen („ELLENŐRIZENDŐ”), adatminőségi listán |
+| E1–E3 (ChatGPT) – Aktivitás, belépési napló, lakói idővonal | ⏸️ Megállt: Lovable kredit/költéskeret-jóváhagyásra vár (csak a Lovable szerkesztőben hagyható jóvá) |
+| 5 agent (Hirdetés, Ügyfélkezelő, Ajánlat, Riport, Lezárás & Számlázás) | ⏳ Sorban, az E pont után |
+| 10 automatizmus + Kommunikáció jóváhagyási lista | ⏳ Sorban |
+| P1–P5 – sebesség | ⏳ Utolsó |
+| LuluShop Termék-riport (beszerzés, bekerülés, ár, nyereség) | ✅ Kész (`5e9f76b`, 425 teszt) |
+| LuluShop Excel képekkel és beszerzési linkkel | ⏳ Sorban |
+
+Adatellenőrzés: payments 7, residents 7, deposits 4, deposit_settlements 1 – egyik sem veszett el.
+Az adatminőségi lista 7-ről 39 tételre nőtt: ezek új, automatikusan felismert hibák (érvénytelen dátum, párosítatlan rekord), nem új hibák az adatban.
 
 **Munkamegosztás, hogy ne legyen dupla munka:** a kódot Claude módosítja a Lovable-projektben.
 ChatGPT feladata a **felülvizsgálat**: nézze át a kész pontokat és ezt a riportot, és írja ide,

@@ -92,7 +92,7 @@ A 23 menüpont **marad így** (Gordon kérése).
 | 10 automatizmus + Kommunikáció jóváhagyási lista | ⏳ Sorban |
 | P1–P5 – sebesség | ⏳ Utolsó |
 | LuluShop Termék-riport (beszerzés, bekerülés, ár, nyereség) | ✅ Kész (`5e9f76b`, 425 teszt) |
-| LuluShop Excel képekkel és beszerzési linkkel | ⏳ Sorban |
+| LuluShop Excel képekkel és beszerzési linkkel | ✅ Kész (`a4bddd7`, 447 teszt) |
 
 Adatellenőrzés: payments 7, residents 7, deposits 4, deposit_settlements 1 – egyik sem veszett el.
 Az adatminőségi lista 7-ről 39 tételre nőtt: ezek új, automatikusan felismert hibák (érvénytelen dátum, párosítatlan rekord), nem új hibák az adatban.
